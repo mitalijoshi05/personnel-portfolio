@@ -1,0 +1,581 @@
+*{
+    color: rgb(255, 255, 255);
+    font-family:'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width:952px){
+    h6{
+      font-size: 23;
+    }
+    nav ul li a{
+        font-size: 15;
+    }
+    label .logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .home .photo{
+        width: 100%;
+        height: 70%;
+        margin: 20px 20px;
+    }
+}
+
+    
+    
+nav{
+    background-color: #000;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+label{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo img{
+    height: 100px;
+    line-height: 8px;
+}
+
+    
+nav ul{
+    float: right;
+    margin-right: -100px;
+
+}
+nav ul li{
+    display: inline;
+    line-height: 80px;
+    margin: 0 10px;
+
+}    
+nav ul li a{
+    color:#fcfaf7;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 0 30px;
+    border-radius: 3px;
+}
+a:hover{
+    color: #ef8309;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index:999;
+    background-color:rgba(255, 255, 255, 0);;
+    box-shadow: -10px 0 10px rgba(255, 255, 255, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px); 
+    text-align: left;
+}   
+ 
+.sidebar li{
+    width: 100%;
+
+}
+.sidebar a{
+    width: 100%;
+}
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .home{
+        max-height:70%;
+        max-width: fit-content;
+    }
+    .home .photo img{
+        height: 100%;
+        width:100%;
+        margin: 10px 10px;
+        padding: auto;
+    }
+    .home .intro h1{
+        font-size: 30px;
+    }
+    .home .intro h4{
+        font-size: 17px;
+    }
+    .home .intro span{
+        font-size:21px;
+    }
+    .about{
+        max-height:80%;
+        max-width: max-content;
+        margin: auto;
+    }
+    .about .content button a{
+        font-size: 23px;
+        
+    }
+    .about .content p{
+        font-size: 20px;
+    }
+    .contact .information h3{
+        font-size:24px ;
+    }
+    .contact .icon{
+        margin-top: 40px;
+    } 
+    .contact .icon img{
+        max-width: 40px;
+        max-height: 40px;
+        
+      
+         margin-right: auto;
+        margin-left: auto;
+    }
+    .education .content .heading h4{
+        font-size: 20px;
+    }
+    .education .content .description p{
+        font-size: 10px;
+    }
+    .experience .content .heading h4{
+        font-size:auto;
+    }
+    .experience .content .description p{
+        font-size: 10px;
+    }
+    .main .skills{
+        
+        object-fit: cover;
+    }
+    .main .skills h1{
+        font-size: 23px;
+    }
+    .main .description .planguage  h4{
+        font-size: 19px;
+    }
+    .main .description .dlanguages  h4{
+        font-size: 19px;
+    }
+    .main .description .wlanguages  h4{
+        font-size: 19px;
+    }
+    .main .description .wlanguages li{
+        font-size: 14px;
+    }
+    .main .description .dlanguages li{
+        font-size: 14px;
+    }
+    .main .description .planguage li{
+        font-size: 14px;
+    }
+    .block1 img{
+        height: 10x;
+        width: 250px;
+       
+    }
+    .block2 img{
+        height: 100x;
+        width: 250px;
+       
+    }
+    .block3 img{
+        height: 100x;
+        width: 250px;
+        
+    }
+    .block4 img{
+        height: 100x;
+        width: 250px;
+    }
+    .block5 img{
+        height: 100x;
+        width: 250px;
+       
+    }
+    .block6 img{
+        height: 100x;
+        width: 250px;
+       
+    }
+    
+}
+
+
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+}
+.home .photo img{
+    height: 100%;
+    width: 100%;
+    padding:auto ;
+    object-fit: contain;
+}
+    
+
+.intro{
+    margin: 50px 50px;
+    padding: 50px 50px;
+    display: inline;
+}
+.intro h4{
+    font-size: 27px;
+}
+
+.intro h4 span{
+    position: relative;
+    color: #ef8309;
+    font-size: 45px;
+   
+}
+.intro h4 span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #ef8309;
+    left: 0;
+    animation:typing 1.5s steps(12)  infinite;
+    background:#222;
+    
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 32px;
+    }
+}
+
+.intro {
+    font-size: 37px;
+    
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    background-image:url(about1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.about .content{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    padding: 10px 20px;
+    margin-right: 50px;
+    background-color: transparent; 
+    object-fit: contain;   
+}
+.about .content h3{
+    font-style:oblique;
+    color:#ef8309;
+    font-family:'poppins',sans-serif;
+    font-size: 43px;
+    background-color: transparent;    
+}
+
+.about .content p{
+    font-style: italic;
+    margin: 10px 20px;
+    color:#fcfaf7;
+    margin-top: auto; 
+    background-color: transparent;
+    animation: slideIn 3s ease-in;
+       
+} 
+@keyframes slideIn{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.about .content button{
+    background-color: black;
+    font-size: 34px;
+       
+}
+.about .content a{
+    color: #ef8309;   
+
+}
+.about .content a:hover{
+    color: #f8c15c;
+}
+.contact {
+    
+    background-color: black;
+    font-size: 45px;
+    align-items: center;
+    border-color: white;
+
+}
+.information{
+    margin:-100px 0px;
+    padding: 0px 100px;
+    
+}
+.information .icon{
+    display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.information h3{
+    color:#ef8309;
+    text-align: center;
+}
+.information .icon img{
+    margin: 50px 50px;
+    height:34px;
+    width: 34px;
+    margin-top: -40px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.information .icon img:hover {
+    background-color: #6d6c6b;
+}
+
+.education {
+    width: 100%;
+    height: fit-content;
+    background-image:url(edubg.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: -50px;
+    
+}
+.education .content{
+    margin: 50px 50px;
+    padding: 50px 50px;
+    background-color:rgba(0, 0, 0, 0.2);
+   
+}
+.education .heading h4{
+    color: #ef8309;
+    font-size: 31px;
+    font-style: italic;
+    font-family:'poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    animation: blink 1s ease-in-out;  
+}
+@keyframes blink{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+.education .description p{
+    line-height: 0.5;
+    font-size: 23px;
+    text-align: right;
+    font-family:'poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+   
+}
+.education .description a{
+    color: #ef8309;
+}
+.education .description a:hover{
+    color: #f8c15c;
+}
+
+
+.experience{
+    
+    height: fit-content;
+    background-image:url(experiencebg.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px 50px;
+    
+}
+.experience .content .heading h4{
+    color: #ef8309;
+    font-size: 35px;
+    font-style: italic;
+    font-family:'poppins',sans-serif;
+    
+}
+.experience .content .description p{
+    font-size: 25px;
+    font-family:'poppins',sans-serif;
+    margin-right: 100px;
+    animation: zoomIn 1s; 
+}
+.experience .content .description .plinks a{
+    background-color:rgba(247, 247, 247, 0.2);
+    background-size:200%;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #ef8309;
+    
+}
+@keyframes zoomIn{
+    0%{
+        transform: scale(0.10);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.experience .content .description .plinks a:hover{
+    color: #f8c15c;
+}
+
+.main{
+    display: grid;
+
+    
+}
+.skills h1{
+   padding: 0px 50px;
+   margin: 0px 0px;;
+    color: #ef8309;
+    font-size: 34px;
+    background-color:#222;
+}
+.skills .description{
+    background-color: #222;
+    display: flex;
+    justify-content:space-around; 
+    padding: 0px 50px;
+   
+}
+.skills .description h4{
+    font-size: 28px;
+    color: #f8c15c;
+}
+.skills .description li{
+    font-size: 21px;
+}
+
+
+
+.portfolio-container{
+    max-width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   display: inline;
+}
+.certificate-section{
+    margin-bottom: 20px;
+    
+}
+.certificate-section h2{
+    margin-top: 0;
+}
+.certificate-grid{
+    display: inline;
+    grid-template-rows: repeat(auto-fill,minmax(100px,1fr));
+    grid-gap:10px;
+}
+.certificate{
+    background-color: #000;
+    border: 2px solid #e99724;
+    padding: 10px;
+    text-align: center;
+    
+}
+.certificate img{
+    width: 100%;
+    height:100px;
+    object-fit:cover;
+    margin-bottom: 10px;
+    
+    margin-right: 10px;
+}
+.certificate h3{
+    margin-top: 0;
+}
+.certificate p{
+    margin-bottom:5px;
+}
+.main{
+    background: #222;
+}
+.main h1{
+    color: #ef8309;
+    margin: 50px 50px
+}
+.view{
+    
+    margin: 100px 100px;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content:space-between;
+    
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 10% cover  30%;
+    
+}
+.block1 img{
+    height: 200x;
+    width: 500px;
+   
+}
+.block2 img{
+    height: 200x;
+    width: 500px;
+   
+}
+.block3 img{
+    height: 200x;
+    width: 500px;
+    
+}
+.block4 img{
+    height: 200x;
+    width: 500px;
+}
+.block5 img{
+    height: 200x;
+    width: 500px;
+   
+}
+.block6 img{
+    height: 200x;
+    width: 500px;
+   
+}
+
+
+
+
+
+

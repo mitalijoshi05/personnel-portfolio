@@ -1,0 +1,77 @@
+<html>
+    <head>
+       
+        <title> Mitali's portfolio</title>
+        
+        <link  rel="stylesheet" href="mitali.css" >
+    </head>
+    <body>
+        
+        <nav>
+            
+            <label class="logo">
+                <img src="C:\Users\sk\Desktop\mitali\logo-removebg-preview.png">
+                
+            </label>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()> <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li> <a href="home.html"> Home </a></li>
+                <li> <a href="education.html">Education </a></li>
+                <li> <a href="experience.html">Work Experience </a></li>
+                <li> <a href="IC.html">Skills and Certificates </a></li>
+                
+            </ul>
+         
+             <ul>
+                <li class="hideOnMObile"> <a href="home.html"> Home </a></li>
+                <li class="hideOnMObile"> <a href="education.html">Education </a></li>
+                <li class="hideOnMObile"> <a href="experience.html">Work Experience </a></li>
+                <li class="hideOnMObile"> <a href="IC.html">Skills and Certificates </a></li>
+                <li onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    
+            </ul>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar= document.querySelector('.sidebar')
+                sidebar.style.display='flex'
+            } 
+            function hideSidebar(){
+                const sidebar= document.querySelector('.sidebar')
+                sidebar.style.display='none'
+            } 
+        </script>
+
+
+
+
+
+
+        <main class="home">
+            <div class="photo">
+                <img src="C:\Users\sk\Desktop\mitali\Snapchat-1874615600.jpg">
+            </div>
+            <div class="intro">
+                    <h1> Hello Everyone!!</h1>
+                    <h4> I am <div class="name"><span> Mitali Joshi,</span></div>CS-IT Student from Sophia Girls' College (autonomous) ,Ajmer ,Rajasthan. </h4>
+            </div>
+        </main>
+
+        <main class="about">
+            <div class="content">
+                <h3> About-</h3>
+                <p>Rising senior in the field of computer science and technology, a passionate and driven computer science student with a strong interest in web development and artificial intelligence. I'm exciting to continue learning, growing and exploring the vast opportunities in the field of computer science.</p>
+                <button> <a href="C:\Users\sk\Downloads\Resume- Mitali Joshi.docx" target="_top"> Resume </a></button>
+            </div>
+        </main>
+        <main class="contact">
+            <div class="information">
+                <h3> Contact Me:</h3>
+                <div class="icon">
+                     <a href="https://www.linkedin.com/in/mitali-joshi-7232392a4/"><img src="linkedin.png"></a>
+                    <a href="https://github.com/mitalijoshi05"><img src="git.png"></a>
+                   <a href="https://www.instagram.com/mitalijoshi05_"><img src="insta-removebg-preview (1).png"></a>
+                </div>
+            </div>
+        </main>    
+    

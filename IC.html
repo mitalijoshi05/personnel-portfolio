@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title> Mitali's portfolio</title>
+        <link  rel="stylesheet" href="mitali.css">
+    </head>
+    <body>
+        
+        
+        <nav>
+            
+            <label class="logo">
+                <img src="C:\Users\sk\Desktop\mitali\logo-removebg-preview.png">
+                
+            </label>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()> <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li> <a href="home.html"> Home </a></li>
+                <li> <a href="education.html">Education </a></li>
+                <li> <a href="experience.html">Work Experience </a></li>
+                <li> <a href="IC.html">Skills and Certificates </a></li>
+                
+            </ul>
+         
+            <ul>
+                <li class="hideOnMObile"> <a href="home.html"> Home </a></li>
+                <li class="hideOnMObile"> <a href="education.html">Education </a></li>
+                <li class="hideOnMObile"> <a href="experience.html">Work Experience </a></li>
+                <li class="hideOnMObile"> <a href="IC.html">Skills and Certificates </a></li>
+                <li onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    
+            </ul>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar= document.querySelector('.sidebar')
+                sidebar.style.display='flex'
+            } 
+            function hideSidebar(){
+                const sidebar= document.querySelector('.sidebar')
+                sidebar.style.display='none'
+            } 
+        </script>
+
+    <div class="main">
+    
+        <main class="skills">
+            <h1> Skills:</h1>
+            <div class="description">
+                <div class="planguage">
+                    <h4> Programming Languages:</h4>
+                    <ul>
+                        <li> C</li>
+                        <li> C++</li>
+                        <li> Java</li>
+                        <li>python</li>
+                        <li> VB.Net</li>
+                        <li>PHP</li>
+                        <li> Data structures and algorithm</li>
+                    </ul>
+                </div>
+                 <div class="Dlanguages">
+                    <h4> Database Languages</h4>
+                    <ul>
+                        <li> Sql</li>
+                        <li> Mysql</li>
+                        <li>Psql </li>
+                        <li> Rdbms</li>
+                    </ul>
+                </div>
+                <div class="Wlanguages">
+                    <h4> Web Languages</h4>
+                    <ul>
+                        <li> Html</li>
+                        <li> Css</li>
+                        <li> Javascript</li>
+                        <li> Wordpress </li>
+                    </ul>
+                </div>
+            </div> 
+
+        </main>
+        
+
+
+
+        <style>
+            @keyframes appear{
+                from{
+                    opacity: 0;
+                    scale: 0.5;
+                }
+                to{
+                    opacity: 1;
+                    scale: 1;
+                }
+            }
+        </style>
+        <main class="certificates">
+            <h1> Some certificates are as follows:</h1>
+        <div class="view">
+            <div class="block1">
+                <img src="goggle data anlytics.jpeg">
+            </div>
+            <div class="block2">
+                <img src="data anytics and visualization.jpeg">
+            </div>
+            <div class="block3">
+                <img src="data structres and algorithms.jpeg">
+            </div>
+            <div class="block4">
+                <img src="power Bi.jpeg">
+            </div>
+            <div class="block5">
+                <img src="front end development.jpeg">
+            </div>
+            <div class="block6">
+                <img src="ai workshop.jpeg">
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+        <!--<div class="portfolio-container">
+            <section class="certificate-section">
+                <h2>Certificates</h2>
+                    <div class="cetificate-grid">
+                        <div class="certificate">
+                        <img src="data anytics and visualization.jpeg">
+                        <h3> By Forage</h3>
+                        <p> Date: 2023</p>
+                    </div>
+                    <div class="certificate">
+                        <img src="data structres and algorithms.jpeg">
+                        <h3> By SkillsUp</h3>
+                        <p> Date: 2024</p>
+                    </div>
+                    <div class="certificate">
+                        <img src="goggle data anlytics.jpeg">
+                        <h3> By Google</h3>
+                        <p> Date: 2024</p>
+                    </div>
+                    <div class="certificate">
+                        <img src="power Bi.jpeg">
+                        <h3> By Pwc</h3>
+                        <p> Date: 2024</p>
+                    </div>
+                    <div class="certificate">
+                        <img src="ai workshop.jpeg">
+                        <h3> By NxtWave</h3>
+                        <p> Date: 2024</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+        
+
+
+
+
+
+        <main class="contact">
+            <div class="information">
+                <h3> Contact Me:</h3>
+                <div class="icon">
+                     <a href="https://www.linkedin.com/in/mitali-joshi-7232392a4/"><img src="linkedin.png"></a>
+                    <a href="https://github.com/mitalijoshi05"><img src="git.png"></a>
+                   <a href="https://www.instagram.com/mitalijoshi05_"><img src="insta-removebg-preview (1).png"></a>
+                </div>
+            </div>
+        </main>  
+        </body>
